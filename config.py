@@ -8,17 +8,17 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "21119132"))
+API_HASH = getenv("API_HASH", "c0a90d0ba66e6bdea356894a55f4856e")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5889085407:AAHSyJtD6xPwGGktbE5nnwXpOqB4Fjq3HW8")
 
 # Database to save your chats and stats... Get MongoDB:- 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://acha:acha@cluster0.pjq3j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001654938309"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Zᴇᴅᴢᴇ ✘")
@@ -94,7 +94,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot.
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BACECplSID1lzRPvasyghOtAP1U_9y5n415v2ZCmSwFPSr0_5VWxks7ACgjRbSoxDicufxjPoLvpr7jK7hkL1X4N29uAf0fKd3M7y84T6t")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
